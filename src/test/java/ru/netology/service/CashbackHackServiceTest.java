@@ -1,12 +1,13 @@
 package ru.netology.service;
 
-import org.testng.annotations.Test;
+//import org.testng.annotations.Test;
 
-import static org.testng.Assert.*;
+import static junit.framework.TestCase.assertEquals;
+//import static org.testng.Assert.*;
 
 public class CashbackHackServiceTest {
     CashbackHackService cashbackHackService = new CashbackHackService();
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testRemain() {
 
         int amount = 900;
@@ -17,7 +18,7 @@ public class CashbackHackServiceTest {
 
     }
 
-    @org.testng.annotations.Test
+    @org.junit.Test
     public void testBoundary() {
 
         int amount = 1000;
